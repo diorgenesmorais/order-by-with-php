@@ -4,6 +4,19 @@
 ```sql
 create database ordenando default character set utf8mb4 default collate utf8mb4_general_ci;
 ```
+
+##### Criar uma pasta para salvar os scripts (migrações)
+```bash
+mkdir sql
+```
+
+> Deletar a pasta _sql_ do flyway e criar um link simbólico apontando para pasta **sql**
+>
+> ```bash
+> ...flyway-5.1.4$ $ ln -s ../../sql sql
+> ```
+
+
 ##### Criar os script para criação da tabela
 ```sql
 create table usuarios (
